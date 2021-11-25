@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="switchmatrix.js"></script>
+    <link rel="stylesheet" href="switchmatrix.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>MATRIX CALCULATOR</h1>
+
+        <h3>Enter matrix A</h3>
+        Rows:<input id=totalRowA class="resettable" type=text size="1">
+        Columns:<input id=totalColA class="resettable" type=text size="1">
+        <button id="okA" onclick="createA();">Matrix A</button>
+        <p id="matrixFirst" class="resettable"></p>
+        <h3>Enter matrix B</h3>
+        <span>Rows:<input id=totalRowB class="resettable" type=text size="1"> </span>
+        <span>Columns:<input id=totalColB class="resettable" type=text size="1"></span>
+        <button id="okB" onclick="createB();">Matrix B</button>
+        <p id="matrixSecond" class="resettable"></p>
+        <button onclick="plus();">Addition</button>
+        <button onclick="minus();">Subtraction</button>
+        <button onclick="mul();">Multiplication</button>
+        <button onclick="trans();">Transpose</button>
+        <button onclick="pow();">Power</button>
+        <button onclick="deter();">Determinant</button>
+        <button onclick="inverse();">Inverse</button>
+        <button onclick="reset();">Reset</button>
+        <p id="power_val" class="resettable"></p>
+        <p id="p_btn" class="resettable"></p>
+        <h3>Result</h3>
+        <p id="ans" class="resettable"></p>
+    </div>
+</body>
+
+</html>
+
+
